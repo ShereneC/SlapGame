@@ -27,11 +27,39 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
 
-  <header>
-    <h1>Hellow World</h1>
+  <header class="container-fluid">
+    <div class="row bg-primary">
+      <div class="col">
+        <h1>The Ultimate Slap Game</h1>
+      </div>
+    </div>
   </header>
-  <main></main>
-  <footer></footer>
+  <main class="container">
+    <div class="row mt-3">
+      <div class="col-6 d-flex flex-column align-items-center">
+        <div>
+          <h1>Health:<span id="displayhealth"></span></h1>
+          <h1>Name:<span id="displayname"></span></h1>
+          <h1>Hits:<span id="displayhits"></span></h1>
+          <!-- <h1 id="displayhealth">health</h1> -->
+        </div>
+        <img class="width-200px" src="assets/smallplant.jpg" alt="">
+      </div>
+      <div class="col-3 d-flex flex-column m-4">
+        <button type="button" class="btn btn-outline-primary my-2" onclick="noWater()">No Water</button>
+        <button type="button" class="btn btn-outline-primary my-2" onclick="noLight()">No Light</button>
+        <button type="button" class="btn btn-outline-primary my-2" onclick="noFood()">No Food</button>
+      </div>
+    </div>
+    </div>
+  </main>
+  <footer class="container-fluid">
+    <div class="row bg-secondary">
+      <div class="col">
+        <h1>Developed by Shanker & Sherene </h1>
+      </div>
+    </div>
+  </footer>
 
   <script src="app.js"></script>
 </body>
